@@ -14,10 +14,54 @@ void Kelompok(){
 	cout << "==================================================" <<endl<<endl;
 }
 
+int Penjumlahan(int bil1,int bil2){
+	float hasil;
+	char operasi='+';
+	hasil=bil1+bil2;
+	cout<<"-----------------------------"<<endl;
+	cout<<"    "<<bil1<<operasi<<bil2<<"="<<hasil<<endl;
+	cout<<"-----------------------------"<<endl;
+}
+
+int Pengurangan(int bil1,int bil2){
+	float hasil;
+	char operasi='-';
+	hasil=bil1-bil2;
+	cout<<"-----------------------------"<<endl;
+	cout<<"    "<<bil1<<operasi<<bil2<<"="<<hasil<<endl;
+	cout<<"-----------------------------"<<endl;
+}
+
+int Perkalian(int bil1,int bil2){
+	float hasil;
+	char operasi='*';
+	hasil=bil1*bil2;
+	cout<<"-----------------------------"<<endl;
+	cout<<"    "<<bil1<<operasi<<bil2<<"="<<hasil<<endl;
+	cout<<"-----------------------------"<<endl;
+}
+
+int Pembagian(int bil1,int bil2){
+	float hasil;
+	char operasi='/';
+	hasil=bil1/bil2;
+	cout<<"-----------------------------"<<endl;
+	cout<<"    "<<bil1<<operasi<<bil2<<"="<<hasil<<endl;
+	cout<<"-----------------------------"<<endl;
+}
+
+int Modulus(int bil1,int bil2){
+	float hasil;
+	char operasi='%';
+	hasil=bil1%bil2;
+	cout<<"-----------------------------"<<endl;
+	cout<<"    "<<bil1<<operasi<<bil2<<"="<<hasil<<endl;
+	cout<<"-----------------------------"<<endl;
+}
+
 int main(){
 	Kelompok();
 	int bil1,bil2, pil;
-	float hasil;
 	string operasi;
 	
 	cout<<"PILIH OPERATOR ARITMATIKA"<<endl;
@@ -38,27 +82,24 @@ int main(){
 	cin>>bil2;	
 	
 	switch(pil){
-	        case 1 : hasil=bil1+bil2;
-			operasi='+';
+	        case 1 : Penjumlahan(bil1,bil2);
+			
 			break;
-		case 2 : hasil=bil1-bil2;
-			operasi='-';
+		case 2 : Pengurangan(bil1,bil2);
+			
 			break;
-		case 3 : hasil=bil1*bil2;
-			operasi='*';
+		case 3 : Perkalian(bil1,bil2);
+			
 			break;
-		case 4 : hasil=bil1/bil2;
-			operasi='/';
+		case 4 : Pembagian(bil1,bil2);
+			
 			break;
-		case 5 : hasil=bil1%bil2;
-			 operasi='%';
+		case 5 : Modulus(bil1,bil2);
+			 
 			break;
 		default :
 			cout<<"Salah Memasukan Operator"<<endl;
 	}
-	cout<<"-----------------------------"<<endl;
-	cout<<"    "<<bil1<<operasi<<bil2<<"="<<hasil<<endl;
-	cout<<"-----------------------------"<<endl;
 	
 	getch();
 }
