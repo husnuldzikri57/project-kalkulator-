@@ -20,8 +20,10 @@ int main(){
 	
 	cout<<"Masukan Pilihan : ";
 	cin>>pil;
+        cout>>"---------------------------";
 	cout<<"Masukan Bilangan pertama : ";
 	cin>>bil1;
+        cout>>"---------------------------";
 	cout<<"Masukan Bilangan kedua : ";
 	cin>>bil2;	
 	
