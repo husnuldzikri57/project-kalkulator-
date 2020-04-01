@@ -4,8 +4,18 @@
 
 using namespace std;
 
+void Kelompok(){
+	cout << "==================================================" <<endl;
+	cout << " \t    BUKAN KALENG KALENG PROJECT		 =" <<endl;
+	cout << " 1. Novalia Gita	(1800018164) ketua	 =" <<endl;
+	cout << " 2. Rio Irawan		(1800018173) programer   =" <<endl;
+	cout << " 3. Husnul Dzikri	(1800018171) FrontWEB	 =" <<endl;
+	cout << " 4. Ragil Margiono	(1800018174) FrontMOBILE ="<<endl;
+	cout << "==================================================" <<endl<<endl;
+}
+
 int main(){
-	
+	Kelompok();
 	int bil1,bil2, pil;
 	float hasil;
 	string operasi;
@@ -20,10 +30,10 @@ int main(){
 	
 	cout<<"Masukan Pilihan : ";
 	cin>>pil;
-        cout>>"---------------------------";
+        cout<<"---------------------------"<<endl;
 	cout<<"Masukan Bilangan pertama : ";
 	cin>>bil1;
-        cout>>"---------------------------";
+        cout<<"---------------------------"<<endl;
 	cout<<"Masukan Bilangan kedua : ";
 	cin>>bil2;	
 	
