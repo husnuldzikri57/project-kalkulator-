@@ -1,0 +1,131 @@
+<!--!DOCTYPE html>
+<html>
+<head>
+	<title>Formulir Data Diri Anda</title>
+</head>
+<body>
+	<table alig="center">
+		<form action="data_transaksi.php" method="POST">
+			<tr>
+				<td>NO ID</td><td>:</td><td><input type="number" name="no_id"></td>
+			</tr>
+			<tr>
+				<td>Nama Anda</td><td>:</td><td><input type="text" name="Nama"></td>
+			</tr>
+			<tr>
+				<td>Alamat</td><td>:</td><td><input type="text" name="alamat"></td>
+			</tr>
+			<tr>
+				<td>NO Hanphone</td><td>:</td><td><input type="number" name="nomer_telepon"></td>
+			</tr>
+			<tr>
+				<td>Umur</td><td>:</td><td><input type="text" name="umur"></td>
+			</tr>
+			<tr>
+				<td>Jenis Kelamin</td><td>:</td><td><input type="text" name="jenis_kelamin"></td>
+			</tr>
+			<tr>
+				<td><button type="submit" value="simpan" id="data_transaksi.php">Selanjutnya</button></td>
+			</tr>
+		</form>
+	</table>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <meta charset="utf-8">
+         <title>Formulir</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style media="screen">
+     body {
+          background-image:url('img/images.png');
+          background-repeat: no-repeat;
+         background-size: cover;
+    	}
+
+     #pesan {
+     	 background: white;
+     	 width: 35%;
+         height: 350px;
+          border: 1px solid #d2d2d2;
+         border-radius: 5px;
+         margin-top: 150px;
+         }
+
+     @font-face {
+          src: url('font/Product Sans Regular.ttf');
+         font-family: Product Sans;
+     }
+
+     @font-face {
+          src: url('font/OpenSans-Light.ttf');
+         font-family: OpenSans-Light;
+      }
+
+     #pesan form {
+          margin-top: 15px;
+         float: left;
+         padding: 5px;
+     }
+
+     #pesan .inputa {
+         width: 90%;
+         margin-top: 1px;
+         height: 50px;
+         border: 0px;
+         border-bottom: 1px solid #6a82fb;
+         font-size: 16px;
+         font-family: OpenSans-Light;
+         background: transparent;
+     }
+
+     #pesan .wed {
+         margin-top: 40px;
+         width: 45%;
+         height: 40px;
+         background: #6a82fb;
+         border: none;
+         color: white;
+         font-family: product sans;
+         font-size: 20px;
+         border-radius: 5px;
+     }
+ 
+     #pesan h1 {
+          text-align: center;
+         padding: 5px;
+         color: #6a82fb;
+         font-family: Product Sans;
+     } 
+
+     #pesan hr {
+         width: 50%;
+          height: 4px;
+         border: none;
+         background: #6a82fb;
+      }
+     </style>
+
+	<body>
+ 	 	<center>
+    		<div id="pesan">
+      			<h1>silahkan Isi Data Diri</h1>
+     			 <hr>
+      			<form action="data_transaksi.php" method="POST"> 
+        			<input type="number" class="inputa" name="no_id" placeholder="NO ID">
+		    		<input type="text" class="inputa" name="Nama"  placeholder="Nama Anda"> 
+		    		<input type="text" class="inputa" name="alamat" placeholder="Alamat"> 
+		    		<input type="number" class="inputa" name="nomer_telepon"placeholder="No. Handphone"> 
+					<input type="text" class="inputa" name="umur"placeholder="Umur"> 
+					<input type="text" class="inputa" name="jenis_kelamin"placeholder="Jenis Kelamin">
+		   		 	<button type="submit" class="wed" value="simpan" id="data_transaksi.php">Selanjutnya</button>
+    			</form>
+    		</div>
+  		</center>
+	</body>
+
+</html>
